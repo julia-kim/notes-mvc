@@ -7,7 +7,7 @@
       <div class="form">
         <form action="#" th:action="@{/}" th:object="${note}" method="POST">
           <p><strong>Add new note:</strong></p>
-          <input type="text" name="note" placeholder="Enter note here (up to 50 characters)" th:field="*{content}" maxlength="50">
+          <input type="text" name="note" placeholder="Enter note here (up to 50 characters)" th:field="*{content}" maxlength="50" autocomplete="off">
           <p>Select a color:</p>
           <div class="color-group">
             <input class="color-radio" type="radio" id="pink" name="color" value="pink">
