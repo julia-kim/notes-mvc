@@ -1,0 +1,177 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2b2b2b;
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+}
+
+.cursive {
+  font-family: "La Belle Aurore", cursive;
+}
+
+.marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.normal {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.pink {
+  background-color: #fad2da;
+}
+
+.yellow {
+  background-color: #ffff99;
+}
+
+.green {
+  background-color: #bcdfc9;
+}
+
+.blue {
+  background-color: #a9c6e8;
+}
+
+.purple {
+  background-color: #d6d4df;
+}
+
+marquee {
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.link {
+  color: #2b2b2b;
+  font-size: 0.688em;
+  font-weight: 400;
+  position: absolute;
+  right: 6px;
+  text-decoration: none;
+  top: 4px;
+  z-index: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.note {
+  color: #000;
+  font-size: 2.5em;
+  height: 300px;
+  margin: 5px;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+  padding: 0.25em 0.438em;
+  text-align: center;
+  width: 300px;
+}
+
+.form {
+  height: 300px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.form p {
+  margin-top: 9px;
+}
+
+input[type="text"] {
+  background: #ffffff;
+  border: solid 1px #e5e5e5;
+  font: normal 13px/100% "Roboto", Verdana, Tahoma, sans-serif;
+  outline: 0;
+  padding: 9px;
+  width: 300px;
+}
+
+input:hover,
+input:focus {
+  border-color: #c9c9c9;
+}
+
+label {
+  color: #999;
+  margin-left: 10px;
+}
+
+.font-radio {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.font-radio + label {
+  display: inline-block;
+  font-size: 1.375em;
+  height: 1.5em;
+}
+
+.color-group {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.color-radio {
+  display: none;
+}
+
+.radio {
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  margin-right: 10px;
+  width: 25px;
+}
+
+.radio span {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.color-radio:checked + .radio span {
+  border: 2px solid #d2d1d2;
+}
+
+.submit {
+  background: none;
+  border: none;
+  color: #737373;
+  float: right;
+  font-size: 3em;
+  width: auto;
+}
+
+.wrapper {
+  bottom: 0;
+  height: 465px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 480px;
+}
+
+.gif {
+  bottom: 0;
+  position: absolute;
+}
