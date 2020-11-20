@@ -6,23 +6,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.domain.Note;
 import com.example.demo.repository.NoteRepository;
 
-import java.util.ArrayList;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 @Controller
 public class MainController {
-	private ArrayList<Note> notes = new ArrayList<>();
-	
 	@Autowired
 	private NoteRepository noteRepository;
 
 	@GetMapping("/")
 	public String index(Note note, Model model) {
-		model.addAttribute("notes", notes);
 		model.addAttribute("title", "My Notes");
+		 model.addAttribute("notes", noteRepository.findAll());
 		return "index";
 	}
 	
@@ -34,7 +30,6 @@ public class MainController {
 		model.addAttribute("content", note.getContent());
 		model.addAttribute("color", note.getColor());
 		model.addAttribute("font", note.getFont());
-		notes.add(note);
 		return "redirect:/";
 	}
 	
